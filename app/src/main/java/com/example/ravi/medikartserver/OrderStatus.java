@@ -68,9 +68,7 @@ public class OrderStatus extends AppCompatActivity {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
 
-                        Intent trackingOrder=new Intent(OrderStatus.this,TracingOrder.class);
-                        Common.currentRequest=model;
-                        startActivity(trackingOrder);
+                        //implementation
                     }
                 });
 
