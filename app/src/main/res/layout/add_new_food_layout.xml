@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardElevation="4dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:textColor="#808080"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Description"
+            android:textSize="15sp"
+            android:inputType="textMultiLine"
+            android:textColor="#800000"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:ems="10"
+            android:hint="Price"
+            android:textColor="@color/colorblue"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <EditText
+            android:id="@+id/edtDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Discount"
+            android:textColor="#FF0000"
+            android:inputType="number"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="92dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorgreen"
+                android:text="Select"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="461dp" />
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:background="@color/cardview_dark_background"
+                android:text="Upload"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="461dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

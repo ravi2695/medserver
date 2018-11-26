@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "309924507871",
+    "firebase_url": "https://medikart-c7f34.firebaseio.com",
+    "project_id": "medikart-c7f34",
+    "storage_bucket": "medikart-c7f34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309924507871:android:055f0372259cf94b",
+        "android_client_info": {
+          "package_name": "com.example.ravi.medikartserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309924507871-09dsjfo9fhs9104c0pbfnb8f0780ur4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ravi.medikartserver",
+            "certificate_hash": "3b3def9646a1871699eb5321fb84209a4e9c6e24"
+          }
+        },
+        {
+          "client_id": "309924507871-ugtbshcq109osh2l2434ed4a8mnusd7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzXBKid85t6zSj2pMKyNUU1w9wcJGd_ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309924507871-ugtbshcq109osh2l2434ed4a8mnusd7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309924507871:android:a3584e0fc7d2a3e0",
+        "android_client_info": {
+          "package_name": "com.medikart.otp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309924507871-dglnsrcj3o8rrm34ea3gaj97rko15vas.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medikart.otp",
+            "certificate_hash": "3b3def9646a1871699eb5321fb84209a4e9c6e24"
+          }
+        },
+        {
+          "client_id": "309924507871-v8b1te8spqtohal88rkus1bcrb0dmspg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medikart.otp",
+            "certificate_hash": "fa423e3d37b0bae583d82ee4d604ccb3a77a63cd"
+          }
+        },
+        {
+          "client_id": "309924507871-ugtbshcq109osh2l2434ed4a8mnusd7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzXBKid85t6zSj2pMKyNUU1w9wcJGd_ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309924507871-ugtbshcq109osh2l2434ed4a8mnusd7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
