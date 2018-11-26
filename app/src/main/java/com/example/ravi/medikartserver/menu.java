@@ -28,12 +28,17 @@ import android.widget.Toast;
 import com.example.ravi.medikartserver.Common.Common;
 import com.example.ravi.medikartserver.Interface.ItemClickListener;
 import com.example.ravi.medikartserver.Model.Category;
+import com.example.ravi.medikartserver.Service.ListenOrder;
 import com.example.ravi.medikartserver.ViewHolder.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -108,6 +113,10 @@ DrawerLayout drawer;
         recycler_menu.setLayoutManager(layoutManager);
 
         loadmenu();
+        //call service
+        Intent service=new Intent(menu.this, ListenOrder.class);
+        startService(service);
+
     }
 
     private void showDialog() {
@@ -321,6 +330,23 @@ DrawerLayout drawer;
     }
 
     private void deleteCategory(String key) {
+
+        DatabaseReference foods=database.getReference("Foods");
+        Query foodCategory=foods.orderByChild("menuId").equalTo(key);
+        foodCategory.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for(DataSnapshot postsnapshot:dataSnapshot.getChildren())
+                {
+                    postsnapshot.getRef().removeValue();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
         categories.child(key).removeValue();
         Toast.makeText(this,"Item deleted..",Toast.LENGTH_SHORT).show();
